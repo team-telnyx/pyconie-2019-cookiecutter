@@ -1,0 +1,11 @@
+{
+  "http": {
+    "host": "127.0.0.1",
+    "port": 8080
+  },
+  "src_number": "YOUR_SOURCE_NUMBER",
+  "telnyx_api_key": "YOUR_TELNYX_V2_API_KEY",
+  "telnyx_connection_id": "YOUR_TELNYX_CONNECTION_ID",
+  "templates_dir": "dialajoke/templates",
+  "jokes_external_api_url": "https://icanhazdadjoke.com"
+}

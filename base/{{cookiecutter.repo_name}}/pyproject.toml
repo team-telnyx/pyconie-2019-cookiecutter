@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 88
+py36 = true
+include = '''
+(
+    files/jenky-tools
+  | \.pyi?$
+)
+'''
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | \.typing_modules
+  | \.?venv
+  | _build
+  | build
+  | dist
+)/
+'''

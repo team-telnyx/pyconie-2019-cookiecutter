@@ -1,0 +1,13 @@
+{
+  "event": [
+      "PyCon IE 2019"
+  ],
+  "primary_maintainer": "",
+  "app_name": "dialajoke",
+  "repo_name": "dial-a-joke",
+  "container_name": "dial-a-joke",
+  "project_short_description": "A service that allows users to schedule calls to be made telling them a joke.",
+  "_copy_without_render": [
+    "*.html"
+  ]
+}
