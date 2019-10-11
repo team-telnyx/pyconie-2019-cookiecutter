@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Dial-A-Joke Scheduler</title>
     <!-- HEAD SECTION -->
 
     <!-- IE Edge Meta Tag -->
@@ -44,22 +44,21 @@
 
         <div class="starter-template">
             <div class="row">
-                <h1>I'm aiohttp Server</h1>
-                <p class="lead">{{ server_message }}</p>
+                <h1>I'm the aiohttp Dial-A-Joke Server</h1>
             </div>
             <hr>
             <div class="row">
-                <h1>Getting Started</h1>
+                <h1>Schedule a Call</h1>
                 <form action="/" method="post">
-                    <input type="date" name="date">
-                    <input type="time" name="time">
-                    <input type="string" name="phone_number">
+                    <input type="date" name="date" value="{{ date }}">
+                    <input type="time" name="time" value="{{ time }}">
+                    <input type="string" name="phone_number" placeholder="+353209192682">
                     <input type="submit" class="btn btn-primary">
                 </form>
             </div>
             <hr>
             <div class="row">
-                <h1>My Jokes</h1>
+                <h1>Scheduled Jokes</h1>
                 {% if scheduled_calls %}
                 <table class="table">
                     <thead>

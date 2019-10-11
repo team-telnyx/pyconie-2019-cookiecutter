@@ -33,8 +33,8 @@ Success! Your local environment is setup correctly and you're ready for this wor
 
 Setup your virual environment with the following:
 ```bash
-python3 -m venv env
-source env/bin/activate
+virtualenv venv
+source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 

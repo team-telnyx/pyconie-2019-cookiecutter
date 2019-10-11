@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 
 import aiohttp_jinja2
 import marshmallow as mm
@@ -18,11 +18,19 @@ async def homepage(request: web.Request):
     calls_scheduler = request.app[constants.SCHEDULER]
 
     scheduled_calls = [
-        (datetime.fromtimestamp(q_message.ts), q_message.msg)
+        (datetime.datetime.fromtimestamp(q_message.ts), q_message.msg)
         for q_message in calls_scheduler._queue
     ]
 
-    return {"scheduled_calls": scheduled_calls}
+    date = datetime.datetime.today().strftime("%Y-%m-%d")
+    time_now = datetime.datetime.now()
+    time_future = time_now + datetime.timedelta(minutes=1)
+
+    time = time_future.strftime("%H:%M")
+
+    print(time)
+
+    return {"scheduled_calls": scheduled_calls, "date": date, "time": time}
 
 
 async def telnyx_webhook(request: web.Request) -> web.Response:
@@ -77,7 +85,7 @@ async def schedule_call(request):
         )
 
     # Create a datetime object from the request
-    dt = datetime.combine(date, time)
+    dt = datetime.datetime.combine(date, time)
 
     try:
         dt_secs = validate_dt(dt)

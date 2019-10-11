@@ -3,7 +3,6 @@
 
 {{cookiecutter.project_short_description}}
 """
-import argparse
 import asyncio
 import json
 import logging
@@ -24,7 +23,6 @@ from {{cookiecutter.app_name}}.infrastructure import constants
 from {{cookiecutter.app_name}}.infrastructure import server
 from {{cookiecutter.app_name}}.infrastructure.call_control import CallControl
 from {{cookiecutter.app_name}}.infrastructure.scheduler import UnifiedTimedQueue
-
 
 
 def on_startup(conf: Mapping):
@@ -87,7 +85,6 @@ def main():
 
     # Initialize logger.
     logging.basicConfig(stream=sys.stdout, level="INFO")
-
 
     http_socket = conf["http"]
 
