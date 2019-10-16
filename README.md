@@ -4,6 +4,9 @@ Templates for [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)!
 
 In order to create a project from this cookie cutter, you'll need to [install it](https://cookiecutter.readthedocs.io/en/latest/installation.html). Once installed and this repo is cloned locally, you can check out [how to generate a new project](https://cookiecutter.readthedocs.io/en/latest/usage.html#generate-your-project).
 
+## Presentation
+The associated presentation can be accessed here: https://docs.google.com/presentation/d/e/2PACX-1vRBJVv2Z4UdFnkv8oJIfUKp-RliLbFU9TGXItqSr3DMdQzNOq-oKSquGe3Z8-sUCNf09t_s_11x3LV0/pub?start=false&loop=false&delayms=3000#slide=id.g5700329f4d_0_783
+
 ## Templates
 
 `cookiecutter pyconie-2019-cookiecutter/base`
