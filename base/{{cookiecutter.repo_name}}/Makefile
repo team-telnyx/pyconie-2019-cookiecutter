@@ -12,7 +12,7 @@ pipenv_version := 2018.11.26
 black_version := 18.9b0
 
 # Generated variables.
-main_image := registry:5000/jenkins/$(service):$(tag)
+main_image := registry.internal.telnyx.com/jenkins/$(service):$(tag)
 docker_build_args = \
 	--build-arg GIT_COMMIT=$(shell git show -s --format=%H) \
 	--build-arg GIT_COMMIT_DATE="$(shell git show -s --format=%ci)" \
